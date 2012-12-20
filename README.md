@@ -3,6 +3,14 @@ changeHtaccessStyle
 
 Changes the Apache 2.2 htaccess style, to the new one from Apache 2.4
 
+<h2>Usage</h2>
+
+<pre>
+./changeHtaccessStyle.pl file
+</pre>
+
+<h2>Example</h2>
+
 Changes the following old style htaccess file
 
 <pre>
