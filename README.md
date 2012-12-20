@@ -82,3 +82,6 @@ Require host localhost
 Require all granted
 &lt;/Directory&gt;
 </pre>
+
+<h3>Author</h3>
+&copy; Bartosz 'shadzik' Świątek
