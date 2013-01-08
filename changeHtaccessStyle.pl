@@ -4,6 +4,7 @@
 # zu dem Require... Stil von Apache 2.4
 #####################################################
 # (c) 2012 Bartosz Swiatek (b@atwa.us)
+# perl mentorship: Daniel Rohde
 #####################################################
 use strict;
 use warnings;
@@ -64,7 +65,9 @@ close $htaccess;
 if ($DEBUG) {
 	print $output;
 } else {
-	open FILE, ">$file" or die "Could not open $file: $!";
-	print FILE $output;
-	close FILE
+	if (length($output)) {
+                open FILE, ">$file" or die "Could not open $file: $!";
+                print FILE $output;
+                close FILE
+        }
 }
